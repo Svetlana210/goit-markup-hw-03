@@ -20,6 +20,8 @@ body {
   font-size: 14px;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
@@ -37,6 +39,13 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 /* хедер */
 /* лого */
@@ -80,9 +89,15 @@ ul {
 /* главная стр */
 /* герой-секция */
 .hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
   background-color: var(--bg-accent-color);
 }
-.hero-text {
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -95,35 +110,60 @@ ul {
 /* секции */
 /* преимущества */
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   text-transform: uppercase;
 }
+.feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* чем занимаемся */
 /* наша команда */
 .work-title,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
+.team-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-item-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 .team-item-text {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
 /* кнопка на главной стр */
 .button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-text-color);
 
   font-family: inherit;
   font-weight: 700;
@@ -170,11 +210,24 @@ ul {
   line-height: 1.88;
 }
 /* подвал цвета */
-.footer {
+.footer-section {
   background-color: var(--bg-accent-color);
+}
+.footer-section .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-color {
   color: var(--primary-white-color);
+}
+/* .footer-section .logo {
+  margin-bottom: 20px;
+} */
+.address {
+  margin-top: 20px;
+}
+.address-item {
+  margin-bottom: 9px;
 }
 .address-text {
   color: var(--primary-white-color);
