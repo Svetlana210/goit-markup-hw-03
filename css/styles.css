@@ -1,4 +1,4 @@
-/* главные стили */
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -19,13 +19,21 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-ul {
+/* COMPONENTS */
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -47,8 +55,6 @@ ul {
   padding-right: 15px;
   outline: 2px solid tomato;
 }
-/* хедер */
-/* лого */
 .logo {
   color: var(--black-color);
 
@@ -60,7 +66,7 @@ ul {
 .accent {
   color: var(--accent-text-color);
 }
-/* навигация */
+/* NAVIGATION */
 .nav-link {
   color: var(--black-color);
 
@@ -74,7 +80,7 @@ ul {
 .nav-link.current {
   color: var(--accent-text-color);
 }
-/* контакты */
+/* CONTACTS */
 .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -86,8 +92,8 @@ ul {
 .contact-link:focus {
   color: var(--accent-text-color);
 }
-/* главная стр */
-/* герой-секция */
+/* MAIN */
+/* HERO */
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -96,7 +102,6 @@ ul {
   background-color: var(--bg-accent-color);
 }
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-white-color);
 
@@ -107,10 +112,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-/* секции */
-/* преимущества */
+/* FEATURES */
 .feature-title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -120,14 +123,12 @@ ul {
   text-transform: uppercase;
 }
 .feature-text {
-  margin-top: 0;
   margin-bottom: 0;
 }
-/* чем занимаемся */
-/* наша команда */
+/* OUR WORK */
+/* OUR TEAM */
 .work-title,
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -138,8 +139,10 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.team-img {
+  margin-bottom: 30px;
+}
 .team-item-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -148,12 +151,14 @@ ul {
   line-height: 1.19;
 }
 .team-item-text {
-  margin-top: 0;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
-/* кнопка на главной стр */
+.team-item-text-last {
+  font-size: 16px;
+  line-height: 1.19;
+/* BUTTON HTML */
 .button {
   display: inline-block;
   min-width: 200px;
@@ -175,7 +180,7 @@ ul {
 .button:hover {
   background-color: #188ce8;
 }
-/* кнопки в портфолио */
+/* BUTTON PORTFOLIO */
 .filter-button {
   color: var(--title-text-color);
   background-color: var(--background-section-color);
@@ -195,7 +200,7 @@ ul {
 .team {
   background-color: var(--background-section-color);
 }
-/* портфолио проекты*/
+/* PORTFOLIO PROJECTS*/
 .project-title {
   color: var(--title-text-color);
 
@@ -209,7 +214,7 @@ ul {
   font-size: 16px;
   line-height: 1.88;
 }
-/* подвал цвета */
+/* FOOTER COLORS */
 .footer-section {
   background-color: var(--bg-accent-color);
 }
@@ -223,6 +228,7 @@ ul {
 /* .footer-section .logo {
   margin-bottom: 20px;
 } */
+/* ADDRESS */
 .address {
   margin-top: 20px;
 }
