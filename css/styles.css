@@ -52,7 +52,6 @@ p {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 .logo {
   color: var(--black-color);
@@ -64,6 +63,14 @@ p {
 }
 .accent {
   color: var(--accent-text-color);
+}
+/* HEADER */
+.header-section {
+  border: 1px solid var(--border-color);
+}
+.header.container {
+  display: flex;
+  align-items: center;
 }
 /* NAVIGATION */
 .nav {
@@ -112,10 +119,6 @@ p {
 }
 /* MAIN */
 /* HERO */
-.header.container {
-  display: flex;
-  align-items: center;
-}
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
